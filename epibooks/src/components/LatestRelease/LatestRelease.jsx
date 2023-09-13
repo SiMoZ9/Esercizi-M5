@@ -5,11 +5,13 @@ import {Col, Row} from "react-bootstrap";
 import {nanoid} from "nanoid";
 const LatestRelease = ({fantasyBooks, historyBooks, horrorBooks, scifiBooks, romanceBooks}) => {
 
-    const books = [...fantasyBooks,
+    const books = [
+        ...fantasyBooks,
         ...historyBooks,
         ...horrorBooks,
         ...scifiBooks,
-        ...romanceBooks]
+        ...romanceBooks
+     ]
     console.log(typeof(books))
 
     return (
